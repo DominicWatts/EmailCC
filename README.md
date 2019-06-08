@@ -4,6 +4,6 @@ Comma seperated attribute field within customer account area to add cc to transa
 
 # Install instructions # 
 
-`composer require dominicWatts/emailcc`
+`composer require dominicwatts/emailcc`
 
 `php bin/magento setup:upgrade`

@@ -1,0 +1,16 @@
+<?php
+$emailCc = $block->getCustomer()->getCustomAttribute('email_cc');
+$customerEmailCC = $emailCc ? $emailCc->getValue() : null;
+?>
+<fieldset class="fieldset create account" >
+    <legend class="legend">
+        <span><?=$block->escapeHtmlAttr(__('Email Copy To'))?></span>
+    </legend>
+    <br>
+    <div class="field email_cc">
+        <label for="email_cc" class="label"><span><?=$block->escapeHtmlAttr(__('Email Address (Comma separated)'));?></span></label>
+        <div class="control">
+            <input id="email_cc" class="input-text" name="email_cc" value="<?=$block->escapeHtmlAttr($customerEmailCC);?>" title="<?=$block->escapeHtmlAttr(__('Email Copy To'));?>" type="text" autocomplete="off" />
+        </div>
+    </div>
+</fieldset>

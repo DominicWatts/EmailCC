@@ -45,7 +45,6 @@ class TransportBuilder
         \Magento\Framework\Mail\Template\TransportBuilder $subject
     ) {
         try {
-
             $ccEmailAddresses = $this->getEmailCopyTo();
             if (!empty($ccEmailAddresses)) {
                 foreach ($ccEmailAddresses as $ccEmailAddress) {
@@ -53,7 +52,6 @@ class TransportBuilder
                     $this->logger->debug((string) __('Added customer CC: %1', trim($ccEmailAddress)));
                 }
             }
-
         } catch (\Exception $e) {
             $this->logger->error((string) __('Failure to add customer CC: %1', $e->getMessage()));
         }

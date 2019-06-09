@@ -75,7 +75,6 @@ class TransportBuilder
      */
     public function getEmailCopyTo()
     {
-
         $customerId = $this->getCustomerIdFromSession();
         if (!$customerId) {
             return false;

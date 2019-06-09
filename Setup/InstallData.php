@@ -22,7 +22,6 @@ use Magento\Framework\Setup\ModuleDataSetupInterface;
  */
 class InstallData implements InstallDataInterface
 {
-
     private $customerSetupFactory;
 
     /**

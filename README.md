@@ -14,4 +14,4 @@ Customer has ability to set CC address in customer account area.  This can eithe
 
 ![Screenshot](https://i.snag.gy/FjQmN4.jpg)
 
-Once configured transactional email will be sent to main recipient and CC repient(s)
+Once configured transactional email will be sent to main recipient and CC recipient(s)

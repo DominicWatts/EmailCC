@@ -3,9 +3,10 @@
     <update handle="customer_account"/>
     <body>
         <referenceContainer name="content">
-            <block class="Magento\Customer\Block\Form\Edit" name="customer_edit" template="Xigen_CC::form/edit.phtml" cacheable="false">
-                <container name="form.additional.info" as="form_additional_info"/>
-                <block class="Magento\Customer\Block\Form\Edit" name="email_cc" template="Xigen_CC::form/email_cc.phtml"/>
+            <block class="Magento\Customer\Block\Form\Edit" name="customer_edit" template="Magento_Customer::form/edit.phtml" cacheable="false">
+                <container name="form.additional.info" as="form_additional_info">
+                    <block class="Magento\Customer\Block\Form\Edit" as="customer_edit_cc" name="customer.edit.css" template="Xigen_CC::form/email_cc.phtml"/>
+                </container>
             </block>
         </referenceContainer>
     </body>

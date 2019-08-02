@@ -3,7 +3,7 @@
     "description": "Add email cc field to customer account area. Transactional emails are also sent to this address.",
     "type": "magento2-module",
     "license": "OSL-3.0",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "authors": [
         {
             "name": "Dominic Xigen",

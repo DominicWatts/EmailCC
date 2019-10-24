@@ -46,7 +46,8 @@ class InstallData implements InstallDataInterface
 
         $customerSetup->addAttribute(
             \Magento\Customer\Model\Customer::ENTITY,
-            'email_cc', [
+            'email_cc',
+            [
                 'type' => 'varchar',
                 'label' => 'Email CC',
                 'input' => 'text',

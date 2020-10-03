@@ -8,9 +8,17 @@ $customerEmailCC = $emailCc ? $emailCc->getValue() : null;
     </legend>
     <br>
     <div class="field email_cc">
-        <label for="email_cc" class="label"><span><?=$block->escapeHtmlAttr(__('Email Address (Comma separated)'));?></span></label>
+        <label for="email_cc" class="label">
+            <span><?=$block->escapeHtmlAttr(__('Email Address (Comma separated)'));?></span>
+        </label>
         <div class="control">
-            <input id="email_cc" class="input-text" name="email_cc" value="<?=$block->escapeHtmlAttr($customerEmailCC);?>" title="<?=$block->escapeHtmlAttr(__('Email Copy To'));?>" type="text" autocomplete="off" />
+            <input id="email_cc" 
+                   class="input-text" 
+                   name="email_cc" 
+                   value="<?=$block->escapeHtmlAttr($customerEmailCC);?>" 
+                   title="<?=$block->escapeHtmlAttr(__('Email Copy To'));?>" 
+                   type="text" 
+                   autocomplete="off" />
         </div>
     </div>
 </fieldset>

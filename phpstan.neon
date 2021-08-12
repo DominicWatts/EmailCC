@@ -8,5 +8,5 @@ parameters:
     ignoreErrors:
         - '#invalid typehint#'
         - '#unknown class#'
-        - '#return statement is missing'
+        - '#return statement is missing#'
     reportUnmatchedIgnoredErrors: false
